@@ -71,8 +71,9 @@ export default function Product(props) {
               type="button"
               className="btn_delete"
               onClick={() => removeProduct(product.id)}
+              style={{ color: "white" }}
             >
-              Xóa
+              Delete
             </button>
             <div className="btn-group">
               <Link
@@ -80,7 +81,7 @@ export default function Product(props) {
                 className="btn_update"
                 to={"/product/edit/" + product.id}
               >
-                Chỉnh sửa
+                Update
               </Link>
             </div>
             <div className="btn-group">
@@ -89,7 +90,7 @@ export default function Product(props) {
                 className="btn_update"
                 to={"/product/detail/" + product.id}
               >
-                Chi Tiết
+                Details
               </Link>
             </div>
           </div>
